@@ -1,4 +1,4 @@
-# c-code
+write a code to check if given is character digit or not# c-code
 #include <stdio.h>
 
 int main() {
