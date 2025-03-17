@@ -1,0 +1,19 @@
+# for find prime number using function
+def my_fun(x):
+    if x<=1:
+        return False
+    for i in range(2,x):
+        if x%i==0:
+            return False
+        return True
+#For check 0 to 10 prime or even or odd  
+for j in range(11):
+  
+    if my_fun(j) :
+        print(j,"it is prime")
+    elif j%2==0:
+        print(j,"it is even")
+    else :
+        print(j,"it is odd")
+        
+    
