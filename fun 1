@@ -1,0 +1,43 @@
+// Online C compiler to run C program online
+/* Online C Compiler and Editor */
+#include <stdio.h>
+#include <math.h>
+void arm(int num){
+    int org=num;
+    int digit=0;
+    int sum=0;
+    int temp=num;
+    while(temp!=0){
+        digit++;
+        temp=temp/10;
+        
+    }
+    temp=num;
+   while(temp!=0){
+       int ldig=temp%10;
+       sum = sum + pow(ldig, digit);
+        temp=temp/10;
+   }
+   if (sum == org)
+        printf("%d is an Armstrong number.\n", org);
+    else
+        printf("%d is NOT an Armstrong number.\n", org);
+
+
+}
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    arm(num);
+
+    return 0;
+}
+
+
+    
+    
+   
+     
+
